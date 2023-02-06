@@ -5,8 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.newsapp.R
-import com.example.newsapp.databinding.FragmentSearchBinding
 import com.example.newsapp.databinding.FragmentSplashBinding
 
 class SplashFragment : Fragment() {

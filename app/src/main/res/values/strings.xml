@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">News App</string>
+    <string name="popular_news">Popular News</string>
 </resources>

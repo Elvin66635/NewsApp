@@ -10,15 +10,10 @@ import android.view.ViewGroup
 import android.webkit.URLUtil
 import android.widget.Toast
 import androidx.core.content.ContextCompat
-import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
-import com.example.newsapp.R
-import com.example.newsapp.databinding.FragmentDetailsBinding
 import com.example.newsapp.databinding.FragmentDetailsFavoriteBinding
-import com.example.newsapp.ui.details.DetailsViewModel
-import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import java.lang.Exception
 
@@ -28,7 +23,6 @@ class DetailsFavoriteFragment : Fragment() {
     private var _binding: FragmentDetailsFavoriteBinding? = null
     private val mBinding get() = _binding!!
     private val bundleArgs: DetailsFavoriteFragmentArgs by navArgs()
-    private val viewModel by viewModels<DetailsViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

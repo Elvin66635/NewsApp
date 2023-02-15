@@ -1,12 +1,18 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-WeatherForecastJet is a sample project that presents a modern approach to Android app development.
+NewsApp is a sample project that presents a modern approach to Android app development.
 
-The project tries to combine popular Android tools and to demonstrate best development practices by utilizing up to date tech-stack like Compose, Kotlin Flow and Hilt.
-
-<img src="https://raw.githubusercontent.com/Elvin66635/WeatherForecastJet/master/app/src/main/res/drawable/main.jpeg" width="250">
-
+* Coroutines
+* MVVM
+* Extension Functions
+* Dagger Hilt
+* Retrofit
+* Room
+* Navigation Components
+* Cache Strategy (Repository Pattern)
+* Coroutines Flow
+* ViewBinding
 
 ## Description
 

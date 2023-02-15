@@ -22,4 +22,4 @@ This app uses NewsAPI to get various sources and each source can provide major h
 
 
 ### Screenshots
-![news_1](https://user-images.githubusercontent.com/53175847/218965694-86827bb6-535e-499f-873c-db3071185f49.png) ![news_search](https://user-images.githubusercontent.com/53175847/218968949-333c3e25-3a80-4f87-85af-8c7e8565b883.png) ![news_3](https://user-images.githubusercontent.com/53175847/218968024-650a5f54-c2a4-4f0f-85f1-a583952eae14.png)
+![news_1](https://user-images.githubusercontent.com/53175847/218965694-86827bb6-535e-499f-873c-db3071185f49.png) ![news_search](https://user-images.githubusercontent.com/53175847/218968949-333c3e25-3a80-4f87-85af-8c7e8565b883.png) ![news_3](https://user-images.githubusercontent.com/53175847/218968024-650a5f54-c2a4-4f0f-85f1-a583952eae14.png) ![details](https://user-images.githubusercontent.com/53175847/218970263-9535157e-3dff-4063-be94-61eb2422cdba.png)

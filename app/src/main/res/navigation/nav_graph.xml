@@ -28,8 +28,8 @@
         android:label="fragment_favorite"
         tools:layout="@layout/fragment_favorite" >
         <action
-            android:id="@+id/action_favoriteFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment"/>
+            android:id="@+id/action_favoriteFragment_to_detailsFavoriteFragment"
+            app:destination="@id/detailsFavoriteFragment" />
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
@@ -39,5 +39,22 @@
         <action
             android:id="@+id/action_searchFragment_to_detailsFragment"
             app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.newsapp.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFavoriteFragment"
+        android:name="com.example.newsapp.ui.favorites.DetailsFavoriteFragment"
+        android:label="DetailsFavoriteFragment" >
+        <argument
+            android:name="article"
+            app:argType="com.example.newsapp.models.Article" />
     </fragment>
 </navigation>

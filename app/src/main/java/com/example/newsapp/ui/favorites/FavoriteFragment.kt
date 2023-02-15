@@ -44,7 +44,7 @@ class FavoriteFragment : Fragment() {
 
         newsAdapter.setOnItemClickListener {
             val bundle = bundleOf("article" to it)
-            view.findNavController().navigate(R.id.action_favoriteFragment_to_detailsFragment, bundle)
+            view.findNavController().navigate(R.id.action_favoriteFragment_to_detailsFavoriteFragment, bundle)
         }
 
         deleteItemsBySwipe(view)

@@ -18,14 +18,11 @@
 
     <LinearLayout
         android:id="@+id/article_info"
-        android:layout_width="200dp"
+        android:layout_width="185dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="10dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/article_image"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -49,5 +46,15 @@
             app:fontWeight="700"
             tools:text="Musk invited UK Parliament to discuss $44 billion Twitter buyout" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/article_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:src="@drawable/ic_favorite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/article_info"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

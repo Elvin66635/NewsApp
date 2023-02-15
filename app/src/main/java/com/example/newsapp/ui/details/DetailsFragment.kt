@@ -10,17 +10,22 @@ import android.view.ViewGroup
 import android.webkit.URLUtil
 import android.widget.Toast
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
-import com.example.newsapp.R
 import com.example.newsapp.databinding.FragmentDetailsBinding
+import com.google.android.material.snackbar.Snackbar
+import dagger.hilt.android.AndroidEntryPoint
 import java.lang.Exception
 
+@AndroidEntryPoint
 class DetailsFragment : Fragment() {
 
     private var _binding: FragmentDetailsBinding? = null
     private val mBinding get() = _binding!!
     private val bundleArgs: DetailsFragmentArgs by navArgs()
+    private val viewModel by viewModels<DetailsViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -60,6 +65,23 @@ class DetailsFragment : Fragment() {
                     ).show()
                 }
             }
+            mBinding.iconFavorite.setOnClickListener {
+                viewModel.saveFavoriteArticles(article)
+                Snackbar.make(view, "Successfully save article", Snackbar.LENGTH_LONG).show()
+            }
+
+            mBinding.iconBack.setOnClickListener {
+                findNavController().popBackStack()
+            }
+
+            mBinding.iconShare.setOnClickListener {
+                val shareIntent = Intent()
+                shareIntent.action = Intent.ACTION_SEND
+                shareIntent.type = "text/plain"
+                shareIntent.putExtra(Intent.EXTRA_TEXT, articleArg.url)
+                startActivity(Intent.createChooser(shareIntent, "Поделиться ссылкой"))
+            }
+
         }
     }
 }

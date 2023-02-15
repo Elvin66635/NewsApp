@@ -67,7 +67,6 @@ class DetailsFragment : Fragment() {
                 }
             }
             mBinding.iconFavorite.setOnClickListener {
-                if (mBinding.iconFavorite.isShown) {
                     mBinding.iconFavorite.setImageResource(R.drawable.ic_favorite_added)
                     viewModel.saveFavoriteArticles(article)
                     Snackbar.make(view, "Successfully save article", Snackbar.LENGTH_LONG).show()
@@ -85,8 +84,6 @@ class DetailsFragment : Fragment() {
                     shareIntent.putExtra(Intent.EXTRA_TEXT, articleArg.url)
                     startActivity(Intent.createChooser(shareIntent, "Поделиться ссылкой"))
                 }
-
-            }
         }
     }
 }

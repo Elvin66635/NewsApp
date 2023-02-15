@@ -15,8 +15,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.newsapp.R
 import com.example.newsapp.databinding.FragmentMainBinding
 import com.example.newsapp.ui.adapters.NewsAdapter
-import com.example.utills.Constants.Companion.QUERY_PAGE_SIZE
-import com.example.utills.Resource
+import com.example.newsapp.utills.Constants.Companion.QUERY_PAGE_SIZE
+import com.example.newsapp.utills.Resource
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_main.*
 

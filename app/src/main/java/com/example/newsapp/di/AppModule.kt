@@ -5,7 +5,7 @@ import androidx.room.Room
 import com.example.newsapp.data.api.NewsService
 import com.example.newsapp.data.db.ArticleDao
 import com.example.newsapp.data.db.ArticleDatabase
-import com.example.utills.Constants.Companion.BASE_URL
+import com.example.newsapp.utills.Constants.Companion.BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

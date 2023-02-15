@@ -1,4 +1,4 @@
-package com.example.utills
+package com.example.newsapp.utills
 
 import java.text.SimpleDateFormat
 import java.util.*

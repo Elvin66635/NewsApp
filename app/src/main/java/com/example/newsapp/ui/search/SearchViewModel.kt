@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.newsapp.data.api.NewsRepository
 import com.example.newsapp.models.NewsResponse
-import com.example.utills.Resource
+import com.example.newsapp.utills.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

@@ -12,7 +12,7 @@ import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.newsapp.databinding.FragmentSearchBinding
 import com.example.newsapp.ui.adapters.NewsAdapter
-import com.example.utills.Resource
+import com.example.newsapp.utills.Resource
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_search.*
 import kotlinx.coroutines.Job

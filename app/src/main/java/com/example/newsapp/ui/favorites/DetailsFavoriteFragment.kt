@@ -1,4 +1,4 @@
-package com.example.newsapp.ui.details
+package com.example.newsapp.ui.favorites
 
 import android.content.Intent
 import android.net.Uri
@@ -16,23 +16,25 @@ import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
 import com.example.newsapp.R
 import com.example.newsapp.databinding.FragmentDetailsBinding
+import com.example.newsapp.databinding.FragmentDetailsFavoriteBinding
+import com.example.newsapp.ui.details.DetailsViewModel
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import java.lang.Exception
 
 @AndroidEntryPoint
-class DetailsFragment : Fragment() {
+class DetailsFavoriteFragment : Fragment() {
 
-    private var _binding: FragmentDetailsBinding? = null
+    private var _binding: FragmentDetailsFavoriteBinding? = null
     private val mBinding get() = _binding!!
-    private val bundleArgs: DetailsFragmentArgs by navArgs()
+    private val bundleArgs: DetailsFavoriteFragmentArgs by navArgs()
     private val viewModel by viewModels<DetailsViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentDetailsBinding.inflate(layoutInflater, container, false)
+        _binding = FragmentDetailsFavoriteBinding.inflate(layoutInflater, container, false)
         return mBinding.root
     }
 
@@ -66,15 +68,8 @@ class DetailsFragment : Fragment() {
                     ).show()
                 }
             }
-            mBinding.iconFavorite.setOnClickListener {
-                if (mBinding.iconFavorite.isShown) {
-                    mBinding.iconFavorite.setImageResource(R.drawable.ic_favorite_added)
-                    viewModel.saveFavoriteArticles(article)
-                    Snackbar.make(view, "Successfully save article", Snackbar.LENGTH_LONG).show()
-                    mBinding.iconFavorite.visibility = View.GONE
-                }
 
-                mBinding.iconBack.setOnClickListener {
+                mBinding.iconBackFavorite.setOnClickListener {
                     findNavController().popBackStack()
                 }
 
@@ -89,4 +84,3 @@ class DetailsFragment : Fragment() {
             }
         }
     }
-}
